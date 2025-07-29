@@ -1,26 +1,22 @@
 {
-  "name": "Flutter Dev",
-  "image": "mvolkmann/flutter-devcontainer",
-  "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  "name": "Flutter InvoiceMe",
+  "build": {
+    "dockerfile": "Dockerfile"
   },
   "postCreateCommand": "flutter doctor && flutter pub get",
   "forwardPorts": [8080],
-  "customizations": {
-    "vscode": {
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
-      },
-      "extensions": [
-        "dart-code.flutter",
-        "dart-code.dart-code"
-      ]
-    }
-  },
   "portsAttributes": {
     "8080": {
-      "label": "Flutter Web",
+      "label": "Flutter Web Preview",
       "onAutoForward": "openBrowser"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.flutter",
+        "Dart-Code.dart-code"
+      ]
     }
   }
 }
