@@ -1,8 +1,22 @@
 {
-  "name": "Flutter InvoiceMe",
-  "image": "ghcr.io/codespaces/flutter:latest",
+  "name": "Flutter Dev",
+  "image": "mvolkmann/flutter-devcontainer",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
   "postCreateCommand": "flutter doctor && flutter pub get",
   "forwardPorts": [8080],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "dart-code.flutter",
+        "dart-code.dart-code"
+      ]
+    }
+  },
   "portsAttributes": {
     "8080": {
       "label": "Flutter Web",
