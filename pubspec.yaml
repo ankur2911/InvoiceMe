@@ -1,5 +1,5 @@
-name: firebasestarter
-description: A new Flutter project.
+name: invoiceme
+description: A Flutter invoicing app
 version: 1.0.0+1
 
 environment:
