@@ -1,0 +1,12 @@
+{
+  "name": "Flutter InvoiceMe",
+  "image": "ghcr.io/codespaces/flutter:latest",
+  "postCreateCommand": "flutter doctor && flutter pub get",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "Flutter Web",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
